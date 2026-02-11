@@ -108,6 +108,7 @@ def retrieve(query):
 
     # Reorder chunks
     reranked_data = [relevant_data[i] for i in rank_indices]
+    
     return reranked_data[0:6]
 
 
