@@ -7,7 +7,7 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_chroma import Chroma
 
 # -------- CONFIG --------
-VAULT_PATH = Path("Transformers")
+VAULT_PATH = Path("Knowledge_Base")
 DB_PATH = "./chroma_db"
 
 enc = tiktoken.get_encoding("cl100k_base")
