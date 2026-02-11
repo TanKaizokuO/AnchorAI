@@ -42,7 +42,7 @@ AnchorAI is a Retrieval-Augmented Generation (RAG) system designed to interact w
 ## Usage
 
 ### 1. Prepare Your Data
-Place your markdown notes (`.md` files) inside the `Transformers/` directory.
+Create a 'Knowledge_Base/' directory and place your markdown notes (`.md` files) inside that directory.
 
 ### 2. Ingest Data
 Run the ingestion script to process your notes and creating the embeddings database.
