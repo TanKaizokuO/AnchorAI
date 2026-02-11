@@ -87,7 +87,7 @@ Return all provided chunk_ids exactly once.
 
 def retrieve(query):
     # Create a retriever interface from the vector store.
-    # search_kwargs={"k": 5} specifies that we want to retrieve the top 5 most similar documents.
+    # search_kwargs={"k": 5} specifies that we want to retrieve the top 15 most similar documents.
     retriever = db.as_retriever(search_kwargs={"k": 15})
     # Execute the retrieval.
     # This converts the query to a vector and performs a similarity search.

@@ -36,12 +36,14 @@ def chat(message, history):
         # 1. format history explicitly for safety/consistency
         history = [{"role": h["role"], "content": h["content"]} for h in history]
         
-        if history != []:
-            message = rewrite_question(message, history)
+        # if history != []:
+        #     message = rewrite_question(message, history)
+        #     print("Rewritten question: ",message)
 
 
         rag_context = retrieve(message)
-        print("rag_context is ",rag_context)
+        print("RAG Context: ",rag_context)
+        
         # 2. Construct the message payload
         # Note: We will define system_message in the next section
         # Combine message and RAG context as a single string
